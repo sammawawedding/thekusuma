@@ -6,7 +6,7 @@ export const styWrapper = css`
   .container {
     margin: 30px auto;
     overflow: hidden;
-    box-shadow: 0 0 10px rgb(202, 202, 204);
+    box-shadow: 0 0 10px rgb(246, 213, 92);
     background-color: ;
     border-radius: 2px;
     padding: 0 16px;
@@ -80,7 +80,7 @@ export const styWrapper = css`
   }
 
   .primary {
-    background: #f14e95;
+    background: #f6d55c;
     color: #fff;
     border: none;
   }

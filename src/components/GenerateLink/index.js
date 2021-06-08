@@ -13,7 +13,7 @@ function GenerateLink() {
 
   const { data, loading } = useGuestData();
 
-  const URL = `https://thekusuma.com?to=${encodeURIComponent(name)}`;
+  const URL = `https://jalil-iin.herokuapp.com/?to=${encodeURIComponent(name)}`;
 
   const handleChange = (e) => {
     setType(parseInt(e.target.value, 10));
@@ -113,7 +113,7 @@ function GenerateLink() {
               <tbody>
                 {data.map((d, index) => {
                   const offlineInvitation = isInvitation ? `&type=invitation&code=${d.code}` : '';
-                  const mapURL = `https://thekusuma.com?to=${encodeURIComponent(d.name)}${offlineInvitation}`;
+                  const mapURL = `https://jalil-iin.herokuapp.com/?to=${encodeURIComponent(d.name)}${offlineInvitation}`;
                   return (
                     <tr>
                       <td>{index + 1}</td>
@@ -145,7 +145,7 @@ function GenerateLink() {
   return (
     <div>
       <h2 className="title">Generator of Link Invitation</h2>
-      <h3 className="title__sub">Dinda & Indra Wedding</h3>
+      <h3 className="title__sub">Iin & Jalil Wedding</h3>
 
       {loading && <h4 style={{ textAlign: 'center' }}>Memuat data..</h4>}
 
